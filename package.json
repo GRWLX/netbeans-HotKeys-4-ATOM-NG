@@ -5,7 +5,7 @@
   "description": "Highlights of NetBeans IDE 8.0 Keyboard Shortcuts ",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "netbeans-keymap:toggle"
+    "atom-workspace": "netbeans-HotKeys-4-ATOM-NG:toggle"
   },
   "repository": "https://github.com/GRWLX/netbeans-HotKeys-4-ATOM-NG",
   "license": "Apache-2.0",

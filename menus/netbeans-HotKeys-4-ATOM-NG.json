@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle netbeans-HotKeys-4-ATOM-NG",
+        "command": "netbeans-HotKeys-4-ATOM-NG:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "my-package",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "netbeans-HotKeys-4-ATOM-NG:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
