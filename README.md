@@ -8,7 +8,8 @@ This uses Highlights of NetBeans IDE 8.0 Keyboard Shortcuts mapping over the cur
 
 ## **Installation**
 
-commandline "apm install netbeans-HotKeys-4-ATOM-NG "
+commandline "apm install netbeans-HotKeys-4-ATOM-NG"
 or
 Atom package manager search: netbeans-HotKeys-4-ATOM-NG
+
 Ctrl====⌘
