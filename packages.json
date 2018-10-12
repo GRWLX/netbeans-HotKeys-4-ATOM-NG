@@ -1,0 +1,16 @@
+{
+  "name": "netbeans-HotKeys-4-ATOM-NG",
+  "main": "./lib/netbeans-keymap",
+  "version": "0.1.0",
+  "description": "Highlights of NetBeans IDE 8.0 Keyboard Shortcuts ",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "netbeans-keymap:toggle"
+  },
+  "repository": "https://github.com/GRWLX/netbeans-HotKeys-4-ATOM-NG",
+  "license": "Apache-2.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

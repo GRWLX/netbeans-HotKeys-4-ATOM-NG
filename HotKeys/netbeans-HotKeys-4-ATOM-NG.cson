@@ -1,0 +1,187 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+#
+# 'atom-workspace':
+#   'ctrl-alt-o': 'netbeans-keymap:toggle'
+
+# Unset existing commands
+'body':
+  'ctrl-o': 'core:nop'
+  'cmd-o': 'core:nop'
+# Common keybindings (all platforms)
+'atom-text-editor:not([mini])':
+  'alt-shift-up': 'editor:move-line-up'
+  'alt-shift-down': 'editor:move-line-down'
+  'ctrl-[': 'bracket-matcher:select-inside-brackets'# Ctrl-[ Move caret to matching bracket
+
+
+  # Win & Linux keybindings
+'.platform-win32 atom-text-editor:not([mini]), .platform-linux atom-text-editor:not([mini])':
+  #Working
+  # 'alt-f7': 'editor:delete-line'
+  # 'ctrl-shift-f': 'editor:delete-line'
+  # 'ctrl-shift-h': 'editor:delete-line'
+  # 'alt-shift-u': 'editor:delete-line'
+  # 'alt-shift-h': 'editor:delete-line'
+  'ctrl-e': 'editor:delete-line'
+  # 'ctrl-f3': 'editor:delete-line'
+  # 'ctrl-r': 'editor:delete-line'
+  # 'ctrl-u': 'editor:delete-line' # *then u*
+  # Finding, Searching, and Replacing
+#   Ctrl-F3 Search word at insert point
+# F3/Shift-F3 Find next/previous in file
+# Ctrl-F/H Find/Replace in file
+# Alt-F7 Find usages
+'ctrl-shift-f': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
+ 'ctrl-shift-h': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
+# Alt-Shift-U Find usages results
+# Alt-Shift-H Turn off search result highlights
+# Ctrl-R Rename
+'ctrl-U': 'editor:upper-case'# Ctrl-U, then U Convert selection to uppercase
+'ctrl-U': 'editor:upper-case'# Ctrl-U, then L Convert selection to lowercase
+# Ctrl-U, then L Convert selection to lowercase
+# Ctrl-U, then S Toggle case of selection
+# Ctrl-Shift-V Paste formatted
+# Ctrl-Shift-D Show Clipboard History
+# Ctrl-I Jump to quick search field
+# Alt-Shift-L Copy file path
+
+  # 'f3': 'editor:delete-line'
+  # 'shif-f3': 'editor:delete-line'
+  # 'ctrl-f': 'editor:delete-line'
+  # 'ctrl-h': 'editor:delete-line'
+  'ctrl-g': 'go-to-line:toggle'
+  'ctrl-h': 'find-and-replace:find-next-selected'
+  'ctrl-alt-down': 'editor:duplicate-lines'
+  'ctrl-alt-j': 'editor:join-lines'
+  'ctrl-shift-c': 'editor:toggle-line-comments'
+  'ctrl-shift-down': 'editor:duplicate-lines'
+  'ctrl-shift-i': 'editor:auto-indent'
+  'ctrl-shift-up': 'editor:duplicate-lines'
+
+#   Navigating through Source Code
+# Ctrl-O/Alt-Shift-O Go to type/file
+# Ctrl-Shift-T Go to JUnit test
+# Ctrl-Shift-B Go to source
+# Ctrl-B Go to declaration
+# Ctrl-G Go to line
+# Ctrl-Shift-M Toggle add/remove bookmark
+# Ctrl-Shift-Period /
+# Comma
+# Next/previous bookmark
+# Ctrl-Period /
+# Comma
+# Next/previous usage/compile
+# error
+# Alt-Shift-Period /
+# Comma
+# Select next/previous element
+# Ctrl-Shift-1/2/3 Select in Projects/Files/Favorites
+#  # 'ctrl-[': 'bracket-matcher:select-inside-brackets'# Ctrl-[ Move caret to matching bracket
+# Ctrl-K/Ctrl-Shift K Next/previous word match
+# Alt-Left/AltRight/Ctrl-Q
+#
+# Go backward/forward/to last
+# edit
+# Alt Up / Down Next/previous marked
+# occurrence
+
+# Coding in C/C++
+# Alt-Shift-C Go to declaration
+# Ctrl-F9 Evaluate expression
+# Coding in Java
+# Alt-Insert Generate code
+# Ctrl-Shift-I Fix all class imports
+# Alt-Shift-I Fix selected class's import
+# Alt-Shift-F Format selection
+# Alt-Shift Left/
+# Right/Up/Down
+# Shift lines left/right/up/down
+# Ctrl-Shift-R Rectangular Selection (Toggle)
+# Ctrl-Shift-Up/D Copy lines up/down
+# Ctrl/Alt-F12 Inspect members/hierarchy
+# Ctrl-Shift-C/ Ctrl-/Add/remove comment lines
+# Ctrl-E Delete current line
+# Compiling, Testing, and Running
+# F9 Compile package/ file
+# F11 Build main project
+# Shift-F11 Clean & build main project
+# Ctrl-Q Set request parameters
+# Ctrl-Shift-U Create Unit test
+# Ctrl-F6/Alt-F6 Run Unit test on file/project
+# F6/Shift-F6 Run main project/file
+# Opening and Toggling between Views
+# Ctrl-Tab (Ctrl-`) Switch between open
+# documents by order used
+# Shift-Escape Maximize window (toggle)
+# Ctrl-F4/Ctrl-W Close selected window
+# Ctrl-Shift-F4 Close all windows
+# Shift-F10 Open contextual menu
+# Ctrl-PgUp /
+# PgDown
+# Switch between open
+# documents by order of tabs
+# Ctrl-Alt-T Reopen recently closed file
+# Ctrl-Alt-PgUp /
+# PgDown
+# Toggle between editor types
+# Alt-Mouse Wheel
+# Up / Down
+# Zoom text in / out
+# Ctrl-Shift-S Toggle Inspect Mode
+
+# Debugging
+# Ctrl-F5 Start debugging main project
+# Ctrl-Shift-F5 Start debugging current file
+# Ctrl-Shift-F6 Start debugging test for file
+# Shift-F5/F5 Stop/Continue debugging session
+# F4 Run to cursor location in file
+# F7/F8 Step into/over
+# Ctrl-F7 Step out
+# Ctrl-Alt-Up Go to called method
+# Ctrl-Alt-Down Go to calling method
+# Ctrl-F9 Evaluate expression
+# Ctrl-F8 Toggle breakpoint
+# Ctrl-Shift-F8 New breakpoint
+# Ctrl-Shift-F7 New watch
+# When typing in the Source Editor, generate the text in the
+# right-column below by typing the abbreviation that is
+# listed in the left-column and then pressing Tab.

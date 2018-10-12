@@ -2,6 +2,8 @@
 
 Netbeans Hotkeys fro ATOM IDE from NetBeans IDE 8.0 Keyboard Shortcuts
 
+https://netbeans.org/project_downloads/usersguide/shortcuts-80.pdf
+
 ## **Details**
 
 This uses Highlights of NetBeans IDE 8.0 Keyboard Shortcuts mapping over the current Atom KeyMap.
