@@ -61,7 +61,7 @@
   # 'ctrl-shift-h': 'editor:delete-line'
   # 'alt-shift-u': 'editor:delete-line'
   # 'alt-shift-h': 'editor:delete-line'
-  'ctrl-e': 'editor:delete-line'
+ 'ctrl-e': 'editor:delete-line'
   # 'ctrl-f3': 'editor:delete-line'
   # 'ctrl-r': 'editor:delete-line'
   # 'ctrl-u': 'editor:delete-line' # *then u*
@@ -70,13 +70,13 @@
 # F3/Shift-F3 Find next/previous in file
 # Ctrl-F/H Find/Replace in file
 # Alt-F7 Find usages
-'ctrl-shift-f': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
-'ctrl-shift-h': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
+ 'ctrl-shift-f': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
+ 'ctrl-shift-h': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
 # Alt-Shift-U Find usages results
 # Alt-Shift-H Turn off search result highlights
 # Ctrl-R Rename
-'ctrl-U': 'editor:upper-case'# Ctrl-U, then U Convert selection to uppercase
-'ctrl-U': 'editor:upper-case'# Ctrl-U, then L Convert selection to lowercase
+ 'ctrl-U': 'editor:upper-case'# Ctrl-U, then U Convert selection to uppercase
+ 'ctrl-U': 'editor:upper-case'# Ctrl-U, then L Convert selection to lowercase
 # Ctrl-U, then L Convert selection to lowercase
 # Ctrl-U, then S Toggle case of selection
 # Ctrl-Shift-V Paste formatted
@@ -88,14 +88,14 @@
 # 'shif-f3': 'editor:delete-line'
 # 'ctrl-f': 'editor:delete-line'
 # 'ctrl-h': 'editor:delete-line'
-'ctrl-g': 'go-to-line:toggle'
-'ctrl-h': 'find-and-replace:find-next-selected'
-'ctrl-alt-down': 'editor:duplicate-lines'
-'ctrl-alt-j': 'editor:join-lines'
-'ctrl-shift-c': 'editor:toggle-line-comments'
-'ctrl-shift-down': 'editor:duplicate-lines'
-'ctrl-shift-i': 'editor:auto-indent'
-'ctrl-shift-up': 'editor:duplicate-lines'
+ 'ctrl-g': 'go-to-line:toggle'
+ 'ctrl-h': 'find-and-replace:find-next-selected'
+ 'ctrl-alt-down': 'editor:duplicate-lines'
+ 'ctrl-alt-j': 'editor:join-lines'
+ 'ctrl-shift-c': 'editor:toggle-line-comments'
+ 'ctrl-shift-down': 'editor:duplicate-lines'
+ 'ctrl-shift-i': 'editor:auto-indent'
+ 'ctrl-shift-up': 'editor:duplicate-lines'
 
 #   Navigating through Source Code
 # Ctrl-O/Alt-Shift-O Go to type/file
