@@ -71,7 +71,7 @@
 # Ctrl-F/H Find/Replace in file
 # Alt-F7 Find usages
 'ctrl-shift-f': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
- 'ctrl-shift-h': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
+'ctrl-shift-h': 'project-find:show'# Ctrl-Shift-F/H Find/replace in projects
 # Alt-Shift-U Find usages results
 # Alt-Shift-H Turn off search result highlights
 # Ctrl-R Rename
@@ -84,18 +84,18 @@
 # Ctrl-I Jump to quick search field
 # Alt-Shift-L Copy file path
 
-  # 'f3': 'editor:delete-line'
-  # 'shif-f3': 'editor:delete-line'
-  # 'ctrl-f': 'editor:delete-line'
-  # 'ctrl-h': 'editor:delete-line'
-  'ctrl-g': 'go-to-line:toggle'
-  'ctrl-h': 'find-and-replace:find-next-selected'
-  'ctrl-alt-down': 'editor:duplicate-lines'
-  'ctrl-alt-j': 'editor:join-lines'
-  'ctrl-shift-c': 'editor:toggle-line-comments'
-  'ctrl-shift-down': 'editor:duplicate-lines'
-  'ctrl-shift-i': 'editor:auto-indent'
-  'ctrl-shift-up': 'editor:duplicate-lines'
+# 'f3': 'editor:delete-line'
+# 'shif-f3': 'editor:delete-line'
+# 'ctrl-f': 'editor:delete-line'
+# 'ctrl-h': 'editor:delete-line'
+'ctrl-g': 'go-to-line:toggle'
+'ctrl-h': 'find-and-replace:find-next-selected'
+'ctrl-alt-down': 'editor:duplicate-lines'
+'ctrl-alt-j': 'editor:join-lines'
+'ctrl-shift-c': 'editor:toggle-line-comments'
+'ctrl-shift-down': 'editor:duplicate-lines'
+'ctrl-shift-i': 'editor:auto-indent'
+'ctrl-shift-up': 'editor:duplicate-lines'
 
 #   Navigating through Source Code
 # Ctrl-O/Alt-Shift-O Go to type/file
